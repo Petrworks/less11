@@ -91,4 +91,27 @@ body {
   border: 2px solid lightblue;
   border-radius: 0.25em;
   margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+}
+.custom-checkbox:checked + label::before {
+background-color: indigo;
+background-image: url(../svg/check-solid.svg);
+border-color: indigo;
+}
+
+.custom-checkbox:not(:disabled):active + label::before {
+  background-color: transparent;
+  border-color: indigo;
+}
+.custom-checkbox:focus + label::before {
+  box-shadow: 0 0 0.5rem rgb(75, 0, 130, 0.7);
+}
+.custom-checkbox:focus:not(:checked) + label::before {
+  border-color: red;
+}
+.custom-checkbox:disabled + label::before {
+  background-color: lightgrey;
+  border-color: lightgray;
 }
