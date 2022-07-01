@@ -45,15 +45,19 @@ color: white;
 outline: 2px solid indigo;
 }
 
-.btn-button {
+.btn {
   padding: 0.75em;
   border-radius: 1em;
   border: none;
   background-color: orange;
   cursor: pointer; 
+  display: block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
 }
 
-.btn-button:hover {
+.btn:hover {
   background-color: orangered;
   color: white;
   outline: 2px solid indigo;
